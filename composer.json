@@ -1,0 +1,22 @@
+{
+    "name": "aeolun/nginxconfig",
+    "description": "Configure nginx virtual hosts with more or less automagic commands",
+    "type": "project",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Bart Riepe",
+            "email": "aeolun@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^4.0",
+        "romanpitak/nginx-config-processor": "^0.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aeolun\\NginxConfig\\": "src/"
+        }
+    }
+}
