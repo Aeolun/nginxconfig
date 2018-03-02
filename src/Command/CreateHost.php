@@ -67,7 +67,7 @@ class CreateHost extends Command
         		$output->writeln("Host already in hosts file.");
         	}
 
-        	file_put_contents($this->config['hosts_file'], sprintf("%s\t%s", '127.0.0.1', $hostname), FILE_APPEND);
+        	file_put_contents($this->config['hosts_file'], sprintf("\n%s\t%s", '127.0.0.1', $hostname), FILE_APPEND);
         }
     }
 }
